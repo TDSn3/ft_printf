@@ -10,7 +10,7 @@
 
 
 
-#include "header.h"
+#include "libftprintf.h"
 
 void    ft_putstr(const char *s)
 {
