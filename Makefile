@@ -44,7 +44,7 @@ all: $(NAME)
 	$(CC) $(CFLAGS) -o $@ -c $<
 
 $(NAME): $(OBJ)
-	ar rc $@ libftprintf.h $^
+	ar rc $@ ft_printf.h $^
 
 clean:
 	rm -f $(OBJ) $(OBJBNS)

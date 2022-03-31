@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <unistd.h>
 # include <stdio.h>
@@ -45,6 +45,6 @@ void	ft_idconv_p(t_data *data, va_list *ellipse);
 void	ft_idconv_u(t_data *data, va_list *ellipse);
 void	ft_idconv_x(t_data *data, va_list *ellipse);
 void	ft_idconv_x_cap(t_data *data, va_list *ellipse);
-int		t_printf(const char *s, ...);
+int		ft_printf(const char *s, ...);
 
 #endif
