@@ -15,7 +15,7 @@
 void	ft_idconv_x_cap(t_data *data, va_list *ellipse)
 {
 	data->u = va_arg(*ellipse, unsigned int);
-	ft_putnbr_hexa_cap(data->u);
+	ft_putnbr_hexa_cap(data->u, data);
 	data->pos += 1;
 }
 

@@ -25,16 +25,17 @@ typedef struct s_data
 	unsigned long long int	p;
 	unsigned int			u;
 	size_t					pos;
+	int						nbr_return;
 }	t_data;
 
-void	ft_putchar(char c);
-void	ft_putchar_hexa(char c);
-void	ft_putchar_hexa_cap(char c);
-void	ft_putstr(const char *s);
-void	ft_putnbr_int(int nbr);
-void	ft_putnbr_unsigned(unsigned int nbr);
-void	ft_putnbr_hexa(unsigned long long int nbr);
-void	ft_putnbr_hexa_cap(unsigned int nbr);
+void	ft_putchar(char c, t_data *data);
+void	ft_putchar_hexa(char c, t_data *data);
+void	ft_putchar_hexa_cap(char c, t_data *data);
+void	ft_putstr(const char *s, t_data *data);
+void	ft_putnbr_int(int nbr, t_data *data);
+void	ft_putnbr_unsigned(unsigned int nbr, t_data *data);
+void	ft_putnbr_hexa(unsigned long long int nbr, t_data *data);
+void	ft_putnbr_hexa_cap(unsigned int nbr, t_data *data);
 int		ft_putstr_printf(const char *s, t_data *data);
 int		ft_convchr(const char *s, t_data *data);
 void	ft_convselect(const char *s, t_data *data, va_list *ellipse);

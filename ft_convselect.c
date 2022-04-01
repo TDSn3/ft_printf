@@ -32,6 +32,7 @@ void	ft_convselect(const char *s, t_data *data, va_list *ellipse)
 	{
 		write(1, "%%", 1);
 		data->pos += 1;
+		data->nbr_return += 1;
 	}
 }
 

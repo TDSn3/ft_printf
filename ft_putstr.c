@@ -6,17 +6,20 @@
 /*   By: tda-silv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 17:26:11 by tda-silv          #+#    #+#             */
-/*   Updated: 2022/03/31 17:26:48 by tda-silv         ###   ########.fr       */
+/*   Updated: 2022/04/01 17:04:16 by tda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putstr(const char *s)
+void	ft_putstr(const char *s, t_data *data)
 {
 	size_t	i;
 
 	i = 0;
 	while (s[i])
+	{
 		write (1, &s[i++], 1);
+		data->nbr_return += 1;
+	}
 }

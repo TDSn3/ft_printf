@@ -15,7 +15,7 @@
 void	ft_idconv_d_i(t_data *data, va_list *ellipse)
 {
 	data->d = va_arg(*ellipse, int);
-	ft_putnbr_int(data->d);
+	ft_putnbr_int(data->d, data);
 	data->pos += 1;
 }
 

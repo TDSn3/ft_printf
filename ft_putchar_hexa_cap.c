@@ -6,13 +6,13 @@
 /*   By: tda-silv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 15:29:25 by tda-silv          #+#    #+#             */
-/*   Updated: 2022/03/31 15:32:50 by tda-silv         ###   ########.fr       */
+/*   Updated: 2022/04/01 17:06:26 by tda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putchar_hexa_cap(char c)
+void	ft_putchar_hexa_cap(char c, t_data *data)
 {
 	if (c < 10 + '0' && c >= '0')
 		write(1, &c, 1);
@@ -28,4 +28,5 @@ void	ft_putchar_hexa_cap(char c)
 		write(1, "E", 1);
 	else if (c == 15 + '0')
 		write(1, "F", 1);
+	data->nbr_return += 1;
 }
