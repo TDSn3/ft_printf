@@ -46,6 +46,7 @@ void	ft_idconv_p(t_data *data, va_list *ellipse);
 void	ft_idconv_u(t_data *data, va_list *ellipse);
 void	ft_idconv_x(t_data *data, va_list *ellipse);
 void	ft_idconv_x_cap(t_data *data, va_list *ellipse);
+void	ft_datazero(t_data *data);
 int		ft_printf(const char *s, ...);
 
 #endif

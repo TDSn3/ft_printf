@@ -17,8 +17,7 @@ int	ft_printf(const char *s, ...)
 	va_list	ellipse;
 	t_data	data;
 
-	data.pos = 0;
-	data.nbr_return = 0;
+	ft_datazero(&data);
 	va_start(ellipse, s);
 	while (ft_putstr_printf(s, &data))
 		if (ft_convchr(s, &data))
@@ -39,17 +38,19 @@ int	main()
 	int				i;
 	int				j;
 
-	i = ft_printf("%%Testé par %d mes soin%c.\n%s%p\n%p\n%d\n%d\n%u\n%x\n%x\n%X
-\n%i\n", 12, 'S', s, p, pp, d, dd, u, d, dd, d, u);
+	i = ft_printf("%%Testé par %d mes soin%c.", 12, 'S');
+	i += ft_printf("\n%s%p\n%p\n%d\n%d\n%u", s, p, pp, d, dd, u);
+	i += ft_printf("\n%x\n%x\n%X\n%i\n", d, dd, d, u);
 	write(1, "---\n", 4);
-	j = printf("%%Testé par %d mes soin%c.\n%s%p\n%p\n%d\n%d\n%u\n%x\n%x\n%X\n%
-i\n", 12, 'S', s, p, pp, d, dd, u, d, dd, d, u);
+	j = printf("%%Testé par %d mes soin%c.", 12, 'S');
+	j += printf("\n%s%p\n%p\n%d\n%d\n%u", s, p, pp, d, dd, u);
+	j += printf("\n%x\n%x\n%X\n%i\n", d, dd, d, u);
 
-//	i = ft_printf("");
-//	j = printf("");
+//	i = ft_printf("\nNULL %s NULL", NULL);
+//	j = printf("\nNULL %s NULL", NULL);
 
-	ft_printf("\ni = %d\nj = %d\n", i, j);
-	printf("\ni = %d\nj = %d\n", i, j);
+	printf("\n\n->i = %d\n--j = %d\n", i, j);
+	ft_printf("\n->i = %d\n--j = %d\n", i, j);
 
 
 	return (0);

@@ -6,7 +6,7 @@
 #    By: tda-silv <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/11 16:59:26 by tda-silv          #+#    #+#              #
-#    Updated: 2022/03/31 18:04:27 by tda-silv         ###   ########.fr        #
+#    Updated: 2022/04/02 13:16:00 by tda-silv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,7 @@ SRC = ./ft_putchar.c \
 	  ./ft_idconv_x_cap.c \
 	  ./ft_convselect.c \
 	  ./ft_convchr.c \
+	  ./ft_datazero.c \
 	  ./ft_printf.c \
 
 OBJ = $(SRC:.c=.o)
