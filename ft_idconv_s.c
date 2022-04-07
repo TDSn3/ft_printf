@@ -24,6 +24,3 @@ void	ft_idconv_s(t_data *data, va_list *ellipse)
 	}
 	data->pos += 1;
 }
-
-//	Idicateur de conversion "s" :
-//	Affiche une chaîne de caractère (char *).

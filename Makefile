@@ -44,7 +44,7 @@ all: $(NAME)
 %.o : %.c
 	$(CC) $(CFLAGS) -o $@ -c $<
 
-$(NAME): $(OBJ)
+$(NAME): $(OBJ) ft_printf.h
 	ar rc $@ ft_printf.h $^
 
 clean:

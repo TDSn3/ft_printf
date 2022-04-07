@@ -19,6 +19,3 @@ void	ft_idconv_c(t_data *data, va_list *ellipse)
 	data->pos += 1;
 	data->nbr_return += 1;
 }
-
-//	Idicateur de conversion "c" :
-//	Affiche un "char".

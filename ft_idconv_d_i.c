@@ -18,6 +18,3 @@ void	ft_idconv_d_i(t_data *data, va_list *ellipse)
 	ft_putnbr_int(data->d, data);
 	data->pos += 1;
 }
-
-//	Idicateur de conversion "d" ou "i" :
-//	Affiche un "int".

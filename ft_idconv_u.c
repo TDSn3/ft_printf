@@ -18,6 +18,3 @@ void	ft_idconv_u(t_data *data, va_list *ellipse)
 	ft_putnbr_unsigned(data->u, data);
 	data->pos += 1;
 }
-
-//  Idicateur de conversion "u" :
-//  Affiche un "unsigned int".

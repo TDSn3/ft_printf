@@ -35,6 +35,3 @@ void	ft_convselect(const char *s, t_data *data, va_list *ellipse)
 		data->nbr_return += 1;
 	}
 }
-
-//	Cherche une indicateur de conversion 
-//	('d', 'i', 'c', 's', 'p', 'u', 'x', 'X' ou '%').

@@ -28,11 +28,3 @@ int	ft_convchr(const char *s, t_data *data)
 	}
 	return (0);
 }
-
-//  Cherche une spécification de conversion (%) dans 
-//	une chaîne de caractères (s).
-
-//  Si un '%' est trouvé, renvoie 1 et modifie la valeur 
-//	de "pos" dans la structure t_ellipse e.
-
-//  Si aucun '%' n'est trouvé, renvoie 0.

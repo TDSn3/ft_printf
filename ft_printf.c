@@ -18,11 +18,16 @@ int	ft_printf(const char *s, ...)
 	t_data	data;
 
 	ft_datazero(&data);
-	va_start(ellipse, s);
-	while (ft_putstr_printf(s, &data))
-		if (ft_convchr(s, &data))
-			ft_convselect(s, &data, &ellipse);
-	va_end(ellipse);
+	if (s)
+	{
+		va_start(ellipse, s);
+		while (ft_putstr_printf(s, &data))
+			if (ft_convchr(s, &data))
+				ft_convselect(s, &data, &ellipse);
+		va_end(ellipse);
+	}
+	else
+		return (-1);
 	return (data.nbr_return);
 }
 /*
@@ -46,12 +51,12 @@ int	main()
 	j += printf("\n%s%p\n%p\n%d\n%d\n%u", s, p, pp, d, dd, u);
 	j += printf("\n%x\n%x\n%X\n%i\n", d, dd, d, u);
 
-//	i = ft_printf("\nNULL %s NULL", NULL);
-//	j = printf("\nNULL %s NULL", NULL);
+	char *sss; 
+//	i = ft_printf(NULL);
+//	j = printf(NULL);
 
 	printf("\n\n->i = %d\n--j = %d\n", i, j);
 	ft_printf("\n->i = %d\n--j = %d\n", i, j);
-
 
 	return (0);
 }

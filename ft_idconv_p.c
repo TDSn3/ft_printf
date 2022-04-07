@@ -28,6 +28,3 @@ void	ft_idconv_p(t_data *data, va_list *ellipse)
 	}
 	data->pos += 1;
 }
-
-//	Idicateur de conversion "p" :
-//	Affiche l’argument d'un "void *" en hexadécimal avec le préfixe "0x".
